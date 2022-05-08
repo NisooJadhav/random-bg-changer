@@ -1,0 +1,9 @@
+var colors = ["Red", "Yellow", "Blue","Green","Azure","Orange","Autumn","Aqua","Fuchsia","Gray","Maroon","Navy","Olive","Silver","Purple","Teal","White","Black","IndianRed","LightSalmon","DarkSalmon","Salmon","LightCoral","Crimson","FireBrick","DarkRed","Pink","LightPink","HotPink","DeepPink","MediumVioletRed","PaleVioletRed","DarkOrange","OrangeRed","Gold","PapayaWhip","Moccasin","PeachPuff","PaleGoldenRod","Khaki","DarkKhaki","Lavender","Thistle","Plum","Orchid","Magenta","MediumOrchid","MediumPurple","RebeccaPurple","BlueViolet","DarkViolet","DarkOrchid","DarkMagenta","Indigo","SlateBlue","DarkSlateBlue","MediumSlateBlue","GreenYellow","Lime","LimeGreen","PaleGreen","LightGreen","MediumSpringGreen","SpringGreen","SeaGreen","ForestGreen","MediumSeaGreen","DarkGreen","YellowGreen","OliveDrab","DarkOliveGreen","MediumAquamarine","DarkSeaGreen","LightSeaGreen","DarkCyan","LightCyan","PaleTurquoise","Aquamarine","CadetBlue","SteelBlue","LightSteelBlue","PowderBlue","LightBlue","SkyBlue","LightSkyBlue","DeepSkyBlue","DodgerBlue","CornflowerBlue","MediumSlateBlue","RoyalBlue","DarkBlue","MidnightBlue","Cornsilk","NavajoWhite","Wheat","BurlyWood","Tan","RosyBrown","SandyBrown","GoldenRod","Chocolate","Snow","HoneyDew","AliceBlue","GhostWhite","WhiteSmoke","Beige","Ivory","LavenderBlush","MistyRose","DimGray","SlateGray","DarkSlateGray","Tomato"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
+
+btn.addEventListener("click", function () {
+    var randomColor = Math.floor(Math.random() * colors.length)
+    document.body.style.backgroundColor = colors[randomColor];
+    color.textContent = colors[randomColor];
+})
